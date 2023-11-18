@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygments-extra-styles"
+dynamic = ["version"]
+dependencies = [
+    "Pygments"
+]
+license = {file = "LICENSE"}
+authors = [
+  {name = "Ruiyang Wu"},
+]
+description = "This package provides extra custom styles to Pygments."
+readme = "README.md"
+
+[project.entry-points."pygments.styles"]
+sas_studio = "extra_styles:SasStudioStyle"
+
+[tool.setuptools_scm]
