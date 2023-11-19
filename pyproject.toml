@@ -16,6 +16,6 @@ description = "This package provides extra custom styles to Pygments."
 readme = "README.md"
 
 [project.entry-points."pygments.styles"]
-sas_studio = "extra_styles:SasStudioStyle"
+sas_studio = "styles.sas_studio:SasStudioStyle"
 
 [tool.setuptools_scm]
