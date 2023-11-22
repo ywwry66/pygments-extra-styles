@@ -7,11 +7,12 @@ Extra styles:
 ## Installation:
 Use `pipx` in your environment:
 ``` shell
-pipx install --include-deps git+https://github.com/ywwry66/pygments-extra-styles.git
+pipx install "Pygments[pygments-extra-styles]"
+pipx inject Pygments git+https://github.com/ywwry66/pygments-extra-styles.git
 ```
 
-## Upgrading:
+## Upgrading both `Pygments` and `pygments-extra-styles`:
 
 ``` shell
-pipx upgrade --include-injected pygments-extra-styles
+pipx upgrade --include-injected Pygments
 ```
